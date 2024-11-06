@@ -82,7 +82,7 @@ class LoginViewController: UIViewController {
     @objc func loginButtonTapped() {
         guard let email = emailTextField.text, email == "mariano.perez@gmail.com",
               let password = passwordTextField.text, password == "123456" else {
-            showAlert(message: "Correo o contraseña incorrectos.")
+            showAlert(message: "Correo o contraseña incorrectos. Inténtalo nuevamente")
             return
         }
         
